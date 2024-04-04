@@ -1,0 +1,96 @@
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-container {
+    width: 80%;
+    height: 60%;
+    padding: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.5); /* Прозорий блок */
+    color: azure;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container input {
+    width: calc(100% - 85px);
+    height: 28px;
+    outline-color: white;
+    border-radius: 5px;
+}
+
+.input-container button {
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, fuchsia, purple);
+    padding: 0 10px; 
+    margin-left: 5px; 
+}
+
+.todo-list {
+    list-style-type: none;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todo-list-item button {
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.deleted-container {
+    margin-top: 20px;
+}
+
+.deleted-title {
+    color: white;
+}
+
+.deleted-list {
+    list-style-type: none;
+}
+
+
+.clear-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
